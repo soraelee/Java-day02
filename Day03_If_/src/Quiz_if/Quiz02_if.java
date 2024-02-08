@@ -1,4 +1,4 @@
-package if_;
+package Quiz_if;
 
 import java.util.Scanner;
 
