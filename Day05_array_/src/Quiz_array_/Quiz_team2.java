@@ -48,19 +48,16 @@ public class Quiz_team2 {
 //		숫자 5개를 입력받아 높은 순서대로 나열하세요
 		
 		int numb[] = new int[5];
-		int vsnum = 0, index = 0, n_index = 0;
-		boolean bool = true;
+		int vsnum = 0;
 		
 		System.out.print("수 입력 : ");
 		int n = input.nextInt();
-//		vsnum = n;
 		numb[0] = n;
 		
 		for (int i = 1 ; i < numb.length ; i++) {
 			System.out.print("수 입력 : ");
 			n = input.nextInt();
 			numb[i] = n;
-//			for (int j = numb.length - i ;  j >= 1 ; j--) { // 비교횟수는 1-2-3-4로 늘어남
 				for (int k = 0 ; k < i ; k++) {
 					n = numb[i];
 					vsnum = numb[k];
@@ -83,7 +80,6 @@ public class Quiz_team2 {
 						System.out.println();
 					}
 				}
-//			}
 		}
 		System.out.print("최종 배열 : ");
 		for (int a : numb) {
