@@ -53,21 +53,42 @@ public class Quiz_team2 {
 		
 		System.out.print("수 입력 : ");
 		int n = input.nextInt();
-		vsnum = n;
+//		vsnum = n;
+		numb[0] = n;
 		
 		for (int i = 1 ; i < numb.length ; i++) {
 			System.out.print("수 입력 : ");
 			n = input.nextInt();
-//			while(bool) {
-				
-			if (n > vsnum) {
-				n_index = index;
-				index = i;
-			}
-				
+			numb[i] = n;
+//			for (int j = numb.length - i ;  j >= 1 ; j--) { // 비교횟수는 1-2-3-4로 늘어남
+				for (int k = 0 ; k < i ; k++) {
+					n = numb[i];
+					vsnum = numb[k];
+					if (n > vsnum) {
+						numb[i] = vsnum;
+						numb[k] = n;
+						System.out.print("현재 배열 : ");
+						for (int a : numb) {
+							System.out.print(a + "  ");
+						}
+						System.out.println();
+					} 
+					else {
+						numb[i] = n;
+						numb[k] = vsnum;
+						System.out.print("현재 배열 : ");
+						for (int a : numb) {
+							System.out.print(a + "  ");
+						}
+						System.out.println();
+					}
+				}
 //			}
 		}
-		
+		System.out.print("최종 배열 : ");
+		for (int a : numb) {
+			System.out.print(a + "  ");
+		}
 	}
 
 }
