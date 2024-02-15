@@ -2,7 +2,7 @@ package list;
 
 import java.util.ArrayList;
 
-public class Ex02 {
+public class Ex02_size_foreach {
 	public static void main(String[] args) {
 		//리스트의 사이즈
 		ArrayList<String> arr = new ArrayList<>();

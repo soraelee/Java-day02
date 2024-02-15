@@ -3,7 +3,7 @@ package list;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Ex04 {
+public class Ex04_get_set_indexOf {
 	public static void main(String[] args) {
 		ArrayList<String> arr = new ArrayList<>();
 		

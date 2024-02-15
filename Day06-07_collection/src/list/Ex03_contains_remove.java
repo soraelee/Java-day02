@@ -2,7 +2,7 @@ package list;
 
 import java.util.ArrayList;
 
-public class Ex03 {
+public class Ex03_contains_remove {
 	public static void main(String[] args) {
 		ArrayList<String> arr = new ArrayList<>();
 		
