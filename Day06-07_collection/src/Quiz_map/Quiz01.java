@@ -84,7 +84,6 @@ public class Quiz01 {
 							System.out.println("없는 메뉴입니다.");
 						}
 					}
-					
 					break;
 				case 3:
 					break;
