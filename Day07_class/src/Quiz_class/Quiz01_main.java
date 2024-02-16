@@ -5,7 +5,6 @@ public class Quiz01_main {
 //		모든 문제는 각각의 기능 별로 만들어 표현하시오
 //		(입력, 출력, 연산 각각의 기능별로 만드세요)
 
-//		이전의 거꾸로 수를 반환하는 메소드를 각각의 기능별로 만드시오
 		
 //		두 수를 입력 받아 큰 수를 출력하는 함수를 만드시오
 		Quiz01_method q1 = new Quiz01_method();
@@ -33,6 +32,9 @@ public class Quiz01_main {
 		num1 = q1.scanF();
 		q1.int_printF(q1.q5_calF(num1));
 		
+//		이전의 거꾸로 수를 반환하는 메소드를 각각의 기능별로 만드시오
+		num1 = q1.scanF();
+		System.out.println("거꾸로 수 : " + q1.q6_calF(num1));
 		
 	}
 

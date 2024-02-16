@@ -57,18 +57,20 @@ public class Quiz01_method {
 			return n;
 	}
 	public int q6_calF(int n) { //수정 필요
-		int num1, num2 ;
+		int num1 = 0 , num2 = 0;
 		boolean bool = true;
-		num2 = n % 10;
-		 do {
+		
+		while (bool) {
 			if (n >= 10) {
-				n = n / 10;
-				num1 = n % 10;
-				num2 = num1 * 10 + num2; 
+				num1 = n % 10 ; // 105 => 5 * 10 => 50 
+				n = n / 10; //원래 수 n을 10으로 나눔 100-> 10
+				num2 = num2 * 10 + num1 ; // num2를 *10한 뒤 num1을 더하여 하여 저장
 			}
-			else
-				bool = true;
-		} while (bool);
+			else {
+				num2 = num2 * 10 + n; 
+				bool = false;
+			}
+		} 
 		 return num2;
 		
 		
