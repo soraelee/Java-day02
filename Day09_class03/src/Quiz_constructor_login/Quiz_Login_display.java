@@ -2,7 +2,9 @@ package Quiz_constructor_login;
 
 import java.util.Scanner;
 
-public class Quiz_Login_display {
+import Quiz_time.TimeService;
+
+public class Quiz_Login_display{
 	Scanner input = new Scanner(System.in);
 	
 	private String scid, scpwd;
