@@ -30,9 +30,13 @@ public class MemberController implements Initializable {
 		ms.setRoot(root);
 		this.root = root;
 	}
+//	public MemberController() {
+//		System.out.println("생성자 초기화------" + cmbAge);
+//	}
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) { //초기화
+//		System.out.println("초기화 실행---" + cmbAge); // 생성자에서는 FXML 인스턴스들의 값이 초기화X
 		ms = new MemberServiceImpl();
 		String[] cmbTxt = {"20대 미만", "20대", "30대", "40대", "50대 이상"};
 		cmbAge.getItems().addAll(cmbTxt);

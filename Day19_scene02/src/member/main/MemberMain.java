@@ -19,7 +19,9 @@ public class MemberMain {
 			URL url = new URL(URLService.fxPath + "member/fxml/member.fxml");
 			//fxpath : 현재 프로젝트위치 + member
 			FXMLLoader loader = new FXMLLoader(url);
+			System.out.println("로드 전 실행");
 			root = loader.load();
+			System.out.println("로드 후 실행");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -39,7 +41,9 @@ public class MemberMain {
 			URL url = new URL(URLService.fxPath + "member/fxml/member.fxml");
 			//fxpath : 현재 프로젝트위치 + member
 			FXMLLoader loader = new FXMLLoader(url);
+			System.out.println("로드 전 실행");
 			root = loader.load();
+			System.out.println("로드 후 실행");
 			
 			MemberController ctrl = loader.getController();
 			ctrl.setRoot(root); //root 값을 전달해주는 용도 
